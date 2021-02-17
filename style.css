@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.whoWeAre {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.img {
+    width: 238px;
+    height: 426.5px;
+    margin: 20px;
+}
+
+.gallery-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+}
+
+.img-1 {
+    align-items: flex-start;
+}
+
+.img-2,
+.img-5 {
+
+    margin-top: 100px;
+}
+
+.img-2 {}
+
+.image {
+    position: relative;
+}
+
+.title1 {
+    position: absolute;
+    width: 30%;
+    top: 60px;
+    right: -20px;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.title2 {
+    position: absolute;
+    width: 30%;
+    top: 140px;
+    right: -20px;
+    transform: rotate(90deg);
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.title1,
+.title2 {
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .body{
+        overflow-x: hidden;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+    .img {
+        width: 150px;
+        height: 250px;
+        margin: 20px;
+        margin-left: 0;
+    }
+    .gallery-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+    }
+    .heading{
+        width: 40%;
+        font-size: 16px;
+    }
+    .whoWeAre{
+        width: 50%;
+    }
+    .img-2,
+.img-4,
+.img-6{
+    margin-top: 100px;
+}
+.name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 5px;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {}
